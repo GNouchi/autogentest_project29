@@ -40,16 +40,19 @@
 <h3>XML example</h3>
 <a href="https://classic.wowhead.com/item=7368&rand=863&xml"></a><br>
 
-<h3>Example of 8/8 not working:</h3>
+<h3>Example of 8/8 Eagle not working (this is 100% in-game):</h3>
 <a href="https://classic.wowhead.com/item=7368&rand=860"></a><br>
 
 <!-- Area to auto gen rand suffixes 1-2800 per below index -->
 <!-- https://wowwiki.fandom.com/wiki/SuffixId -->
+<h2>Manual Testing</h2>
+<p> Test manual numbers here, unfortunately wowhead rename isnt currently working for manual tests</p>
+<p> You can edit the JS static test directly by changing lines 19 & 20 which will run on page load.</p>
+<p style="font-size: 0.5em"> The initial test is set to 600-800 range</p>
+<p>lowerlimit <input type="text" name="lowerlimit" id="lowerlimit" value="600">  </p>
+<p>upperlimit <input type="text" name="upperlimit" id="upperlimit" value="800">  <button onclick="runtest()">Run test</button></p>
 
-<input type="text" name="testlimit" id="testlimit">
-<button onclick="runtest()">Autogen button </button>
-
-<div id="testzone" > niet</div>
+<div id="testzone" > </div>
 
 
 
