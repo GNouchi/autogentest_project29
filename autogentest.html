@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="autogentest.css">
+</head>
+
+<body>
+    <h1>Project 29 autogen test</h1>
+<p>
+    7368 -- elder pants <br>
+    7423 -- phalanx leggings <br>
+</p>
+<h4>Ranges </h4>
+<p> These are the general ranges for 2 stat combos, there are some inconsistencies such as wolf also having 228 and 256 for low level items</p>
+<p> of the Bear 1179 - 1263 <br>
+    of the Boar 1094 - 1178 <br>
+    of the Eagle 839 - 923 <br>
+    of the Falcon 227 - 500 <br>
+    of the Gorilla 924 - 1008 <br>
+    of the Monkey 584 - 668 <br>
+    of the Owl 754 - 838 <br>
+    of the Tiger 669 - 753 <br>
+    of the Whale 1009 - 1093 <br>
+    of the Wolf 501 - 583 <br>
+</p>
+<p> Single Stats are inconsistent</p>
+<p>Single Stats include: </p>        
+<li> Agility 14</li>
+<li> Defense 48</li>
+<li> Intellect 5</li>
+<li> Spirit 16</li>
+<li> Stamina 15</li>
+<li> Strength 6</li>
+
+<p> See <a href="https://wowwiki.fandom.com/wiki/SuffixId">Suffix Wiki</a> for many more misc stat combos</p>
+
+<h3>XML example</h3>
+<a href="https://classic.wowhead.com/item=7368&rand=863&xml"></a><br>
+
+<h3>Example of 8/8 not working:</h3>
+<a href="https://classic.wowhead.com/item=7368&rand=860"></a><br>
+
+<!-- Area to auto gen rand suffixes 1-2800 per below index -->
+<!-- https://wowwiki.fandom.com/wiki/SuffixId -->
+
+<input type="text" name="testlimit" id="testlimit">
+<button onclick="runtest()">Autogen button </button>
+
+<div id="testzone" > niet</div>
+
+
+
+
+
+<!-- Wowhead API options (doesn't matter when its added)-->
+<script>
+    var whTooltips = {
+        extra: true, 
+        colorLinks: true, 
+        iconizeLinks: true, 
+        renameLinks: true
+        };
+</script>
+<!-- Test generator -->
+    <script src="autogentest.js"></script>
+<!-- wowhead tooltip widget -->
+<!-- ********this needs to refresh on test run or the links wont update , currently does not*******-->
+    <script src="http://wow.zamimg.com/widgets/power.js"></script>
+</body>
+
+
+</html>
